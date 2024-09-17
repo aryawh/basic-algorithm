@@ -29,11 +29,31 @@ class fibbonaci {
     }
 }
 
+class perpangkatan {
+    public static void result() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan bilangan : ");
+        int bilangan = scanner.nextInt();
+        System.out.print("Masukkan pencacah : ");
+        int pencacah = scanner.nextInt();
+        int hasil = 1;
+
+        for (int i = 1; i <= pencacah; i++) {
+            hasil *= bilangan;
+        }
+        System.out.println("Hasilnya : " + hasil);
+        scanner.close();
+    }
+}
+
 public class cPerulangan {
 
     fibbonaci f = new fibbonaci();
+    static perpangkatan perpangkatan = new perpangkatan();
 
     public static void main(String[] args) {
-        fibbonaci.result();
+        // fibbonaci.result();
+        perpangkatan.result();
     }
 }
